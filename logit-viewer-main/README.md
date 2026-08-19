@@ -5,7 +5,7 @@ The official dashboard and presentation portal for the **Logit** logging ecosyst
 🔗 **Quick Links:**
 - **Live Hosted Dashboard (Logit Viewer)**: [https://logit-viewer.vercel.app](https://logit-viewer.vercel.app)
 - **GitHub Repository**: [https://github.com/priyanshi88879/logit-viewer.git](https://github.com/priyanshi88879/logit-viewer.git)
-- **LinkedIn Profile**: [www.linkedin.com/in/priyanshi-gupta-a46baa315](http://in.linkedin.com/in/abhey-tyagi-4aa136264)
+- **LinkedIn Profile**: [https://www.linkedin.com/in/priyanshi-gupta-a46baa315]([https://www.linkedin.com/in/priyanshi-gupta-a46baa315])
 - **NPM Package**: [https://www.npmjs.com/package/logit-logger](https://www.npmjs.com/package/logit-logger)
 
 ## Features
