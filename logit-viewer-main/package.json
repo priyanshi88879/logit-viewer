@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/priyanshi88879/logit-viewer/issues"
   },
-  "homepage": "https://logit-viewer.vercel.app",
+  "homepage": "https://logit-viewer-phi.vercel.app/",
   "type": "module",
   "main": "main.cjs",
   "scripts": {
