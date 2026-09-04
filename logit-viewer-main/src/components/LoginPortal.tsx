@@ -270,17 +270,17 @@ export const LoginPortal: React.FC<LoginPortalProps> = ({ onLogin, defaultServer
                 <div>
                   <span style={{ fontSize: '0.75rem', fontWeight: 700, display: 'block', marginBottom: '6px', textTransform: 'uppercase', color: 'var(--primary)' }}>1. Standalone Setup</span>
                   <div style={{ display: 'flex', alignItems: 'center', background: 'var(--bg-code)', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', fontSize: '0.8rem', marginBottom: '8px' }}>
-                    <code style={{ flex: 1, fontFamily: 'monospace', color: 'var(--text-primary)' }}>npm install logit-logger mongoose express socket.io</code>
-                    <button onClick={() => copyToClipboard('npm install logit-logger mongoose express socket.io', 'cb-b1')} style={{ background: 'none', border: 'none', color: 'var(--primary)', cursor: 'pointer' }}>
+                    <code style={{ flex: 1, fontFamily: 'monospace', color: 'var(--text-primary)' }}>npm install logit-logger-priyanshi mongoose express socket.io</code>
+                    <button onClick={() => copyToClipboard('npm install logit-logger-priyanshi mongoose express socket.io', 'cb-b1')} style={{ background: 'none', border: 'none', color: 'var(--primary)', cursor: 'pointer' }}>
                       {copiedText === 'cb-b1' ? <Check size={14} /> : <Copy size={14} />}
                     </button>
                   </div>
                   <div style={{ position: 'relative', background: 'var(--bg-code)', padding: '12px', borderRadius: '6px', border: '1px solid var(--border-color)', fontSize: '0.75rem' }}>
-                    <button onClick={() => copyToClipboard(`import { createLogitServer } from 'logit-logger/server';\n\nconst server = createLogitServer({\n  username: 'admin',\n  password: 'securePassword123',\n  ingestKey: 'secret_ingest_key',\n  mongoUri: 'mongodb://127.0.0.1:27017/logit-logs',\n  port: 4000,\n  maxLogCount: 10000\n});`, 'cb-b2')} style={{ position: 'absolute', right: '10px', top: '10px', background: 'none', border: 'none', color: 'var(--primary)', cursor: 'pointer', zIndex: 10 }}>
+                    <button onClick={() => copyToClipboard(`import { createLogitServer } from 'logit-logger-priyanshi/server';\n\nconst server = createLogitServer({\n  username: 'admin',\n  password: 'securePassword123',\n  ingestKey: 'secret_ingest_key',\n  mongoUri: 'mongodb://127.0.0.1:27017/logit-logs',\n  port: 4000,\n  maxLogCount: 10000\n});`, 'cb-b2')} style={{ position: 'absolute', right: '10px', top: '10px', background: 'none', border: 'none', color: 'var(--primary)', cursor: 'pointer', zIndex: 10 }}>
                       {copiedText === 'cb-b2' ? <Check size={14} /> : <Copy size={14} />}
                     </button>
                     <pre style={{ margin: 0, fontFamily: 'monospace', color: 'var(--text-primary)', lineHeight: 1.4, overflowX: 'auto' }}>
-{`import { createLogitServer } from 'logit-logger/server';
+{`import { createLogitServer } from 'logit-logger-priyanshi/server';
 
 const server = createLogitServer({
   username: 'admin',                          // Login username for the dashboard console
@@ -330,8 +330,8 @@ const server = createLogitServer({
                 <div>
                   <span style={{ fontSize: '0.75rem', fontWeight: 700, display: 'block', marginBottom: '6px', textTransform: 'uppercase', color: 'var(--primary)' }}>1. Install the SDK package</span>
                   <div style={{ display: 'flex', alignItems: 'center', background: 'var(--bg-code)', padding: '10px', borderRadius: '6px', border: '1px solid var(--border-color)', fontSize: '0.8rem' }}>
-                    <code style={{ flex: 1, fontFamily: 'monospace', color: 'var(--text-primary)' }}>npm install logit-logger</code>
-                    <button onClick={() => copyToClipboard('npm install logit-logger', 'cb-f1')} style={{ background: 'none', border: 'none', color: 'var(--primary)', cursor: 'pointer' }}>
+                    <code style={{ flex: 1, fontFamily: 'monospace', color: 'var(--text-primary)' }}>npm install logit-logger-priyanshi</code>
+                    <button onClick={() => copyToClipboard('npm install logit-logger-priyanshi', 'cb-f1')} style={{ background: 'none', border: 'none', color: 'var(--primary)', cursor: 'pointer' }}>
                       {copiedText === 'cb-f1' ? <Check size={14} /> : <Copy size={14} />}
                     </button>
                   </div>
@@ -340,11 +340,11 @@ const server = createLogitServer({
                 <div>
                   <span style={{ fontSize: '0.75rem', fontWeight: 700, display: 'block', marginBottom: '6px', textTransform: 'uppercase', color: 'var(--primary)' }}>2. Client Initialization</span>
                   <div style={{ position: 'relative', background: 'var(--bg-code)', padding: '12px', borderRadius: '6px', border: '1px solid var(--border-color)', fontSize: '0.75rem' }}>
-                    <button onClick={() => copyToClipboard(`import { LogitClient } from 'logit-logger';\n\nconst logit = new LogitClient({\n  serverUrl: 'http://localhost:4000',\n  ingestKey: 'secret_ingest_key',\n  appName: 'e-commerce-portal',\n  matchId: 'session_v1_operator_22',\n  captureConsole: true,\n  captureErrors: true,\n  batchIntervalMs: 3000,\n  maxBatchSize: 20,\n  debug: false\n});`, 'cb-f2')} style={{ position: 'absolute', right: '10px', top: '10px', background: 'none', border: 'none', color: 'var(--primary)', cursor: 'pointer', zIndex: 10 }}>
+                    <button onClick={() => copyToClipboard(`import { LogitClient } from 'logit-logger-priyanshi';\n\nconst logit = new LogitClient({\n  serverUrl: 'http://localhost:4000',\n  ingestKey: 'secret_ingest_key',\n  appName: 'e-commerce-portal',\n  matchId: 'session_v1_operator_22',\n  captureConsole: true,\n  captureErrors: true,\n  batchIntervalMs: 3000,\n  maxBatchSize: 20,\n  debug: false\n});`, 'cb-f2')} style={{ position: 'absolute', right: '10px', top: '10px', background: 'none', border: 'none', color: 'var(--primary)', cursor: 'pointer', zIndex: 10 }}>
                       {copiedText === 'cb-f2' ? <Check size={14} /> : <Copy size={14} />}
                     </button>
                     <pre style={{ margin: 0, fontFamily: 'monospace', color: 'var(--text-primary)', lineHeight: 1.4, overflowX: 'auto' }}>
-{`import { LogitClient } from 'logit-logger';
+{`import { LogitClient } from 'logit-logger-priyanshi';
 
 const logit = new LogitClient({
   serverUrl: 'http://localhost:4000',     // Ingestion Server Target URL
@@ -523,7 +523,7 @@ logit-agent.sinks.logit-http-sink.channel = memory-channel`}
               <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
             </svg> LinkedIn
           </a>
-          <a href="https://www.npmjs.com/package/logit-logger" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}>
+          <a href="https://www.npmjs.com/package/logit-logger-priyanshi" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}>
             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="14" width="14" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0v24h24V0H0zm18 18h-3V9h-3v9H6V6h12v12z"></path>
             </svg> NPM Package
@@ -629,3 +629,4 @@ logit-agent.sinks.logit-http-sink.channel = memory-channel`}
     </div>
   );
 };
+
